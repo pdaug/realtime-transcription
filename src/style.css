@@ -1,0 +1,109 @@
+*,
+   button,
+   input {
+    font-family: sans-serif;
+   }
+   body {
+    background: #3b2559;
+    background-color: #3b2559;
+    display: flex;
+    margin: 0;
+    height: 100svh;
+    width: 100svw;
+   }
+   main {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    justify-content: center;
+   }
+   aside {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 480px;
+   }
+   header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+   }
+   h1 {
+    color: #e5d3ff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   }
+   p {
+    color: #e5d3ff;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   }
+   button {
+    background: #8f4cec;
+    background-color: #8f4cec;
+    border: 1px solid #8f4cec;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 0.4rem 2rem;
+   }
+   button:disabled {
+    opacity: 0.6;
+   }
+   a {
+    color: #e5d3ff;
+    font-weight: 200;
+    text-decoration: none;
+   }
+
+   div.inputOpenAIModel {
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    width: 100%;
+   }
+   div.inputOpenAIModel label {
+    color: #e5d3ff;
+   }
+
+   div.inputOpenAIAPIKey,
+   div.inputOpenAIURL {
+    display: flex;
+    width: 100%;
+   }
+   div.inputOpenAIAPIKey input,
+   div.inputOpenAIURL input {
+    background: #e5d3ff;
+    background-color: #e5d3ff;
+    border: none;
+    border-radius: 4px;
+    color: #2c1946;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.4rem 0.6rem;
+    width: 100%;
+   }
+
+   section {
+    background: #2c1946;
+    background-color: #2c1946;
+    border-radius: 4px;
+    color: #e5d3ff;
+    font-size: 1.2rem;
+    max-height: 640px;
+    min-width: 480px;
+    overflow-y: scroll;
+    padding: 1rem;
+   }
+   section i {
+    display: block;
+    opacity: 0.6;
+    text-align: center;
+   }

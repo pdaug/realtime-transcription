@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realtime Transcription</title>
+  <link rel="stylesheet" href="./src/style.css" />
+  <script src="./src/utils.js"></script>
+ </head>
+ <body>
+  <main>
+   <aside>
+    <header>
+     <h1>Realtime Transcription</h1>
+     <p>
+      Realtime API service by OpenAI using the WebSocket protocol to enable real-time transcription of recorded audio directly in the browser.
+     </p>
+    </header>
+    <div>
+     <button id="startButton" disabled>Start</button>
+     <button id="stopButton" disabled>Stop</button>
+    </div>
+    <div class="inputOpenAIModel">
+     <div>
+      <input
+       type="radio"
+       name="inputOpenAIModel"
+       id="gpt-4o-audio-preview-2024-12-17"
+       value="gpt-4o-audio-preview-2024-12-17" />
+      <label for="gpt-4o-audio-preview-2024-12-17">gpt-4o-audio-preview-2024-12-17</label>
+     </div>
+     <div>
+      <input
+       type="radio"
+       name="inputOpenAIModel"
+       id="gpt-4o-audio-preview-2024-10-01"
+       value="gpt-4o-audio-preview-2024-10-01" />
+      <label for="gpt-4o-audio-preview-2024-10-01">gpt-4o-audio-preview-2024-10-01</label>
+     </div>
+     <div>
+      <input
+       checked
+       type="radio"
+       name="inputOpenAIModel"
+       id="gpt-4o-mini-audio-preview-2024-12-17"
+       value="gpt-4o-mini-audio-preview-2024-12-17" />
+      <label for="gpt-4o-mini-audio-preview-2024-12-17">gpt-4o-mini-audio-preview-2024-12-17</label>
+     </div>
+    </div>
+    <div class="inputOpenAIURL">
+     <input
+      type="text"
+      minlength="16"
+      maxlength="256"
+      id="inputOpenAIURL"
+      name="inputOpenAIURL"
+      placeholder="OpenAI URL"
+      value="wss://api.openai.com/v1/realtime" />
+    </div>
+    <div class="inputOpenAIAPIKey">
+     <input
+      minlength="16"
+      maxlength="256"
+      type="password"
+      id="inputOpenAIAPIKey"
+      name="inputOpenAIAPIKey"
+      placeholder="OpenAI API Key"
+      value="" />
+    </div>
+    <div>
+     <button id="connectButton">Connect</button>
+    </div>
+    <div>
+     <a href="https://github.com/pdaug" target="_blank">github.com/pdaug</a>
+    </div>
+   </aside>
+
+   <section>
+    <i>No record to transcribe</i>
+   </section>
+  </main>
+
+  <script src="./src/script.js"></script>
+ </body>
+</html>
